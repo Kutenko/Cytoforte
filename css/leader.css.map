@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/theme/leader.scss"
+    ],
+    "names": [],
+    "file": "leader.css"
+}

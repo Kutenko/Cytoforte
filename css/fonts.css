@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700,700i,900,900i|Neucha|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i|Teko:300,400,500,600,700&subset=cyrillic");
+@font-face {
+  font-family: "MyriadPro";
+  src: url("../fonts/Myriad/MyriadPro.otf");
+  src: local("MyriadPro");
+  src: url("../fonts/Myriad/MyriadPro.svg#MyriadPro") format("svg");
+  src: url("../fonts/Myriad/MyriadPro.otf") format("opentype");
+}
+/*# sourceMappingURL=fonts.css.map */

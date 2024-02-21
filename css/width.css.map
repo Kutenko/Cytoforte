@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/theme/width.scss"
+    ],
+    "names": [],
+    "file": "width.css"
+}

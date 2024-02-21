@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyto forte - Избавься от цистита навсегда </title>
+
+    <link rel="stylesheet" href="css/main.css">  
+    <script src="js/uikit.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.8/SmoothScroll.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript">
+        SmoothScroll({
+          // Scrolling Core
+          animationTime: 1000, // [ms]
+          stepSize: 100, // [px]
+    
+          // Acceleration
+          accelerationDelta: 150, // 50
+          accelerationMax: 30, // 3
+    
+          // Keyboard Settings
+          keyboardSupport: true, // option
+          arrowScroll: 50, // [px]
+    
+          // Pulse (less tweakable)
+          // ratio of "tail" to "acceleration"
+          pulseAlgorithm: true,
+          pulseScale: 5,
+          pulseNormalize: 1,
+    
+          // Other
+          touchpadSupport: true, // ignore touchpad by default
+          fixedBackground: true,
+          excluded: ''
+        })
+
+      </script>
+    <script>
+        window.onload = function() {
+            document.getElementById('body').onscroll = function() {
+
+                let stickBtn = document.getElementById('stickButton');
+                let stickTrgr = document.getElementsByClassName('stickTriger')[0];
+
+                console.log ("stickTrgr");
+
+                let coords = stickTrgr.getBoundingClientRect();
+                let heightBlock = stickTrgr.clientHeight - stickTrgr.clientHeight*2;
+
+                console.log(stickTrgr.clientHeight);
+                console.log(stickTrgr,document.documentElement.clientHeight/2);
+
+                if (coords.y - document.documentElement.clientHeight/2 > heightBlock && coords.y - document.documentElement.clientHeight/2 < 40){
+                    stickBtn.classList.add('white');
+                } else {
+                    stickBtn.classList.remove('white');
+                }
+            }
+        }
+
+    </script>
+
+    <!-- <script>
+
+        window.onscroll = function() {
+
+            var stickBtn = document.getElementById('stickButton');
+    let listId = ['1','2','3']
+    var stickTrgr = []
+    let coords = []
+    let heightBlook = []
+    let coordsY = []
+    let arr =[] 
+    let idLength = listId.length
+    for(let i =0; i < idLength;i++){
+    stickTrgr[i] = document.getElementById(listId[i]);
+     coords[i] = stickTrgr[i].getBoundingClientRect();
+      heightBlook[i] = stickTrgr[i].clientHeight - stickTrgr[i].clientHeight*2;
+      coordsY[i] = coords[i].y - document.documentElement.clientHeight/2;
+  if (coords[i].y - document.documentElement.clientHeight/2 > heightBlock[i] && coords[i].y - document.documentElement.clientHeight/2 < 40){
+        console.log('zalupa')
+        stickBtn.classList.add('white');
+    } else {
+        stickBtn.classList.remove('white');
+    }
+}
+        }
+
+    </script> -->
+
+</head>
+<body id="body">
+    <!-- <progress id="js-progressbar" class="uk-progress" value="25" max="100">
+    </progress>
+    <script>
+    
+        UIkit.util.ready(function () {
+    
+            var bar = document.getElementById('js-progressbar');
+    
+            var animate = setInterval(function () {
+            var element = document.getElementById("myDIV");
+    
+                bar.value += 25;
+    
+                if (bar.value >= bar.max) {
+                    clearInterval(animate);
+                    element.classList.toggle("active");
+                    element.classList.toggle("js-progressbar");
+                }
+    
+            }, 1000);
+    
+        });
+    
+    </script>          -->
+    
+    <div class="wrapper" id="myDIV">
+    <section class="section-1">
+        <div class="layer top">
+            <div class="back-bg"></div>
+        </div>
+        <div class="uk-container">
+            <div class="inner">
+                <div class="uk-width-1-3 uk-align-center">
+                    <div class="logo">
+                        <span>cytoforte</span>
+                        <!-- <span>C</span>
+                        <span>Y</span>
+                        <span>T</span>
+                        <span>O</span>
+                        <span>F</span>
+                        <span>O</span>
+                        <span>R</span>
+                        <span>T</span>
+                        <span>E</span> -->
+                    </div>
+                </div>
+                <div class="uk-child-width-1-2" uk-grid>
+                    <div>
+                        <div class="text-1">
+                            <div class="uk-text-center">
+                                <span>
+                                    Избавься от цистита навсегда
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-2">
+                            <div class="uk-text-center">
+                                <div>
+                                    <i class="icon apple"></i>
+                                </div>
+                                <div>
+                                    <span>
+                                            Первое средство, которое лечит все <br> формы хронического цистита
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layer top">
+            <div class="cytoforte uk-align-center" uk-parallax="y: 0,250">
+                <span uk-scrollspy="cls:uk-animation-slide-top; repeat: true; delay:100">C</span>
+                <span uk-scrollspy="cls:uk-animation-slide-top; repeat: true; delay:200">Y</span>
+                <span uk-scrollspy="cls:uk-animation-slide-top; repeat: true; delay:300">T</span>
+                <span uk-scrollspy="cls:uk-animation-slide-top; repeat: true; delay:400">O</span>
+                <span class="f-place"></span>
+                <span uk-scrollspy="cls:uk-animation-slide-top; repeat: true; delay:400">O</span>
+                <span uk-scrollspy="cls:uk-animation-slide-top; repeat: true; delay:300">R</span>
+                <span uk-scrollspy="cls:uk-animation-slide-top; repeat: true; delay:200">T</span>
+                <span uk-scrollspy="cls:uk-animation-slide-top; repeat: true; delay:100">E</span>
+                <div class="lemon" uk-parallax="y: 0,-250"></div>
+                <div class="f" uk-scrollspy="cls:uk-animation-slide-top; repeat: true; delay:500">
+                    <span>f</span>
+                </div>
+            </div>
+        </div>
+        <div class="layer top ">
+            <div class="uk-container">
+                <div uk-parallax="y: 0,50" >
+                    <div class="leaf" uk-scrollspy="cls: uk-animation-scale-down; repeat: true; delay:700"></div>
+                </div>
+            </div>
+        </div>                  
+        <div class="layer bottom ">
+            <div class="uk-container">
+                <div uk-parallax="y: 0,50">
+                    <div class="leaf-2" uk-scrollspy="cls: uk-animation-scale-down; repeat: true; delay:800"></div>
+                </div>
+            </div>
+        </div>
+        <div class="layer bottom ">
+            <div class="uk-container">
+                <div uk-parallax="y: 0,50">
+                    <div class="berries" uk-scrollspy="cls: uk-animation-scale-down; repeat: true; delay:900"></div>
+                </div>
+            </div>
+        </div>
+        <div class="layer top ">
+            <div class="uk-container">
+                <div uk-parallax="y: 0,50" >
+                    <div class="berries-2 uk-align-right" uk-scrollspy="cls: uk-animation-scale-down; repeat: true; delay:1000"></div>
+                </div>
+            </div>
+        </div>          
+    </section>
+    <div class="sticky_wrap" uk-sticky="animation:uk-animation-slide-right;">
+            <div class="sticky_button_lines">
+                <div class="top"></div>
+                <div class="right"></div>
+                <div class="bottom"></div>
+                <div class="left"></div>
+            </div>
+            <div class="sticky_button" id="stickButton"uk-toggle="target: #form-modal">
+                <div class="button_text_1">Заказать</div>
+                <div class="button_text_2">сейчас</div>
+                <div class="img_button">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="101px" height="101px">
+                    <path fill-rule="evenodd"  stroke-width="6px" stroke="rgb(255, 64, 64)" fill="rgb(255, 64, 64)"
+                    d="M51.000,16.500 C69.501,16.500 84.500,31.498 84.500,50.000 C84.500,68.502 69.501,83.500 51.000,83.500 C32.498,83.500 17.500,68.502 17.500,50.000 C17.500,31.498 32.498,16.500 51.000,16.500 Z"/>
+                    <path fill-rule="evenodd"  stroke-width="1px" stroke="rgb(255, 64, 64)" fill-opacity="0" opacity="0.188" fill="rgb(250, 104, 67)"
+                    d="M50.500,3.500 C76.457,3.500 97.500,24.543 97.500,50.500 C97.500,76.457 76.457,97.500 50.500,97.500 C24.543,97.500 3.500,76.457 3.500,50.500 C3.500,24.543 24.543,3.500 50.500,3.500 Z"/>
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                    d="M50.500,28.502 L38.503,47.498 L62.497,47.498 L50.500,28.502 "/>
+                    <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
+                    d="M50.500,73.498 L62.497,54.502 L38.503,54.502 L50.500,73.498 "/>
+                </svg>      
+                </div>
+                <div class="img_dots">
+                    <svg 
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="131px" height="134px">
+                   <path id="dots1" fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M64.988,20.206 C66.967,20.206 68.570,21.873 68.570,23.929 C68.570,25.984 66.967,27.651 64.988,27.651 C63.010,27.651 61.406,25.984 61.406,23.929 C61.406,21.873 63.010,20.206 64.988,20.206 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M64.988,8.508 C66.401,8.508 67.547,9.698 67.547,11.167 C67.547,12.635 66.401,13.825 64.988,13.825 C63.575,13.825 62.430,12.635 62.430,11.167 C62.430,9.698 63.575,8.508 64.988,8.508 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M64.988,119.111 C66.401,119.111 67.547,120.301 67.547,121.770 C67.547,123.238 66.401,124.429 64.988,124.429 C63.575,124.429 62.430,123.238 62.430,121.770 C62.430,120.301 63.575,119.111 64.988,119.111 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M64.988,-0.000 C65.836,-0.000 66.523,0.714 66.523,1.595 C66.523,2.476 65.836,3.190 64.988,3.190 C64.140,3.190 63.453,2.476 63.453,1.595 C63.453,0.714 64.140,-0.000 64.988,-0.000 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M64.988,130.810 C65.836,130.810 66.523,131.524 66.523,132.405 C66.523,133.286 65.836,134.000 64.988,134.000 C64.140,134.000 63.453,133.286 63.453,132.405 C63.453,131.524 64.140,130.810 64.988,130.810 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M64.988,107.413 C66.967,107.413 68.570,109.079 68.570,111.135 C68.570,113.191 66.967,114.857 64.988,114.857 C63.010,114.857 61.406,113.191 61.406,111.135 C61.406,109.079 63.010,107.413 64.988,107.413 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M116.672,68.595 C116.672,67.127 117.817,65.936 119.230,65.936 C120.644,65.936 121.789,67.127 121.789,68.595 C121.789,70.064 120.644,71.254 119.230,71.254 C117.817,71.254 116.672,70.064 116.672,68.595 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M127.930,68.595 C127.930,67.714 128.617,67.000 129.465,67.000 C130.313,67.000 131.000,67.714 131.000,68.595 C131.000,69.476 130.313,70.190 129.465,70.190 C128.617,70.190 127.930,69.476 127.930,68.595 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M105.414,68.595 C105.414,66.539 107.018,64.873 108.996,64.873 C110.974,64.873 112.578,66.539 112.578,68.595 C112.578,70.651 110.974,72.317 108.996,72.317 C107.018,72.317 105.414,70.651 105.414,68.595 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M14.328,68.595 C14.328,70.064 13.183,71.254 11.770,71.254 C10.356,71.254 9.211,70.064 9.211,68.595 C9.211,67.127 10.356,65.936 11.770,65.936 C13.183,65.936 14.328,67.127 14.328,68.595 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M3.070,68.595 C3.070,69.476 2.383,70.190 1.535,70.190 C0.687,70.190 -0.000,69.476 -0.000,68.595 C-0.000,67.714 0.687,67.000 1.535,67.000 C2.383,67.000 3.070,67.714 3.070,68.595 Z"/>
+                   <path fill-rule="evenodd"  fill="rgb(255, 64, 64)"
+                    d="M25.586,68.595 C25.586,70.651 23.982,72.317 22.004,72.317 C20.026,72.317 18.422,70.651 18.422,68.595 C18.422,66.539 20.026,64.873 22.004,64.873 C23.982,64.873 25.586,66.539 25.586,68.595 Z"/>
+                   </svg>        
+                </div>
+            </div>
+        </div>
+        <!-- //end sticky_wrap -->
+    <section class="section-2">
+        <div class="uk-container">
+            <div class="uk-child-width-1-2" uk-grid>
+                <div>
+                    <div class="title">
+                       <h2>
+                            Цистит - это не “простуда”!
+                       </h2> 
+                    </div>
+                    <div class="text">
+                        <p>
+                            <b>Каждая 4-я россиянка страдает от хронического цистита. Это самое распространенное заболевание мочевыводящих путей.</b> Дискомфорт и жжение при мочеиспускании, режущая боль в животе, частые походы в туалет, неприятные запахи - многие женщины уже привыкли к этим симптомам и “лечатся” только обезболивающими. “Застудила”, подумаешь...
+                        </p>
+                        <p>
+                            Но хронический цистит не связан с холодом. Он опаснее, чем вам кажется. Пиелонефрит, уретрит, мочекаменная болезнь - вот самые частые его осложнения. <b>В особо запущенных формах цистит заканчивается сепсисом мочевого пузыря.</b>
+                        </p>
+                        <p>
+                            <b>Раньше цистит лечили антибиотиками.</b> Но они бессильны против кишечных бактерий - главной причины заболевания. После лечения микроорганизмы вновь попадают на кожу промежности, затем в уретру и далее в мочевой пузырь, вызывая вторичное воспаление.
+                        </p>
+                        <div class="separator"> </div>
+                        
+                    </div>
+                </div>
+                <div>
+                    <div class="girl uk-position-relative">
+                        <div class="layer top">
+                            <div class="letter-1 uk-align-left" uk-scrollspy="cls: uk-animation-scale-up; repeat: true">
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="179px" height="197px">
+                                   <defs>
+                                   <filter filterUnits="userSpaceOnUse" id="Filter_0" x="5px" y="4px" width="159px" height="170px"  >
+                                       <feOffset in="SourceAlpha" dx="1" dy="1.732" />
+                                       <feGaussianBlur result="blurOut" stdDeviation="3.162" />
+                                       <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+                                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                       <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                       <feMerge>
+                                       <feMergeNode/>
+                                       <feMergeNode in="SourceGraphic"/>
+                                     </feMerge>
+                                   </filter>
+                                   <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+                                     <stop offset="0%" stop-color="rgb(0,0,0)" stop-opacity="0.2" />
+                                     <stop offset="80%" stop-color="rgb(230,230,230)" stop-opacity="0.2" />
+                                   </linearGradient>
+                                   <filter filterUnits="userSpaceOnUse" id="Filter_1" x="0px" y="0px" width="179px" height="197px"  >
+                                       <feOffset in="SourceAlpha" dx="10" dy="17.321" />
+                                       <feGaussianBlur result="blurOut" stdDeviation="4.472" />
+                                       <feFlood flood-color="rgb(28, 29, 29)" result="floodOut" />
+                                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                       <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                       <feMerge>
+                                       <feMergeNode/>
+                                       <feMergeNode in="SourceGraphic"/>
+                                     </feMerge>
+                                   </filter>
+                                   
+                                   </defs>
+                                   <g filter="url(#Filter_0)">
+                                   <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,13.7357158681264, 133.552521927209)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D75C53">&#1094;</tspan></text>
+                                   </g>
+                                   <g filter="url(#Filter_1)">
+                                   <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.73571586812636, 131.552521927209)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1094;</tspan></text>
+                                   <text kerning="auto" font-family="Myriad Pro" fill="url(#PSgrad_0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.73571586812636, 131.552521927209)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1094;</tspan></text>
+                                   </g>
+                                   </svg>
+                            </div>
+                            <div class="letter-2 uk-align-right" uk-scrollspy="cls: uk-animation-scale-up; repeat: true">
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="167px" height="170px">
+                                   <defs>
+                                   <filter filterUnits="userSpaceOnUse" id="Filter_0" x="6px" y="2px" width="147px" height="143px"  >
+                                       <feOffset in="SourceAlpha" dx="1" dy="1.732" />
+                                       <feGaussianBlur result="blurOut" stdDeviation="3.162" />
+                                       <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+                                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                       <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                       <feMerge>
+                                       <feMergeNode/>
+                                       <feMergeNode in="SourceGraphic"/>
+                                     </feMerge>
+                                   </filter>
+                                   <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+                                     <stop offset="0%" stop-color="rgb(0,0,0)" stop-opacity="0.2" />
+                                     <stop offset="80%" stop-color="rgb(230,230,230)" stop-opacity="0.2" />
+                                   </linearGradient>
+                                   <filter filterUnits="userSpaceOnUse" id="Filter_1" x="0px" y="0px" width="167px" height="170px"  >
+                                       <feOffset in="SourceAlpha" dx="10" dy="17.321" />
+                                       <feGaussianBlur result="blurOut" stdDeviation="4.472" />
+                                       <feFlood flood-color="rgb(28, 29, 29)" result="floodOut" />
+                                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                       <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                       <feMerge>
+                                       <feMergeNode/>
+                                       <feMergeNode in="SourceGraphic"/>
+                                     </feMerge>
+                                   </filter>
+                                   
+                                   </defs>
+                                   <g filter="url(#Filter_0)">
+                                   <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,14.4261149685226, 131.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D75C53">&#1080;</tspan></text>
+                                   </g>
+                                   <g filter="url(#Filter_1)">
+                                   <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.4261149685226, 131.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1080;</tspan></text>
+                                   <text kerning="auto" font-family="Myriad Pro" fill="url(#PSgrad_0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.4261149685226, 131.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1080;</tspan></text>
+                                   </g>
+                                   </svg>                                
+                            </div>
+                        </div>
+                        <div class="layer top">
+                            <div class="girl-img">
+
+                                    <div class="letter-6 uk-align-right" uk-scrollspy="cls: uk-animation-scale-up; repeat: true">
+                                            <svg 
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                                            width="167px" height="170px">
+                                           <defs>
+                                           <filter filterUnits="userSpaceOnUse" id="Filter_0" x="6px" y="4px" width="147px" height="143px"  >
+                                               <feOffset in="SourceAlpha" dx="1" dy="1.732" />
+                                               <feGaussianBlur result="blurOut" stdDeviation="3.162" />
+                                               <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+                                               <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                               <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                               <feMerge>
+                                               <feMergeNode/>
+                                               <feMergeNode in="SourceGraphic"/>
+                                             </feMerge>
+                                           </filter>
+                                           <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+                                             <stop offset="0%" stop-color="rgb(0,0,0)" stop-opacity="0.2" />
+                                             <stop offset="80%" stop-color="rgb(230,230,230)" stop-opacity="0.2" />
+                                           </linearGradient>
+                                           <filter filterUnits="userSpaceOnUse" id="Filter_1" x="0px" y="0px" width="167px" height="170px"  >
+                                               <feOffset in="SourceAlpha" dx="10" dy="17.321" />
+                                               <feGaussianBlur result="blurOut" stdDeviation="4.472" />
+                                               <feFlood flood-color="rgb(28, 29, 29)" result="floodOut" />
+                                               <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                               <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                               <feMerge>
+                                               <feMergeNode/>
+                                               <feMergeNode in="SourceGraphic"/>
+                                             </feMerge>
+                                           </filter>
+                                           
+                                           </defs>
+                                           <g filter="url(#Filter_0)">
+                                           <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,14.7077646087378, 133.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D75C53">&#1090;</tspan></text>
+                                           </g>
+                                           <g filter="url(#Filter_1)">
+                                           <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.70776460873776, 131.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1090;</tspan></text>
+                                           <text kerning="auto" font-family="Myriad Pro" fill="url(#PSgrad_0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.70776460873776, 131.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1090;</tspan></text>
+                                           </g>
+                                           </svg>                            
+                                    </div>
+
+                            </div>
+                            <div class="pain pulsate-bck"></div>
+                        </div>
+                        <div class="layer top">
+                            <div class="letter-3 uk-align-left" uk-scrollspy="cls: uk-animation-scale-up; repeat: true; ">
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="168px" height="176px">
+                                   <defs>
+                                   <filter filterUnits="userSpaceOnUse" id="Filter_0" x="6px" y="4px" width="148px" height="149px"  >
+                                       <feOffset in="SourceAlpha" dx="1" dy="1.732" />
+                                       <feGaussianBlur result="blurOut" stdDeviation="3.162" />
+                                       <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+                                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                       <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                       <feMerge>
+                                       <feMergeNode/>
+                                       <feMergeNode in="SourceGraphic"/>
+                                     </feMerge>
+                                   </filter>
+                                   <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+                                     <stop offset="0%" stop-color="rgb(0,0,0)" stop-opacity="0.2" />
+                                     <stop offset="80%" stop-color="rgb(230,230,230)" stop-opacity="0.2" />
+                                   </linearGradient>
+                                   <filter filterUnits="userSpaceOnUse" id="Filter_1" x="0px" y="0px" width="168px" height="176px"  >
+                                       <feOffset in="SourceAlpha" dx="10" dy="17.321" />
+                                       <feGaussianBlur result="blurOut" stdDeviation="4.472" />
+                                       <feFlood flood-color="rgb(28, 29, 29)" result="floodOut" />
+                                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                       <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                       <feMerge>
+                                       <feMergeNode/>
+                                       <feMergeNode in="SourceGraphic"/>
+                                     </feMerge>
+                                   </filter>
+                                   
+                                   </defs>
+                                   <g filter="url(#Filter_0)">
+                                   <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,14.4776282802821, 140.529172928743)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D75C53">&#1089;</tspan></text>
+                                   </g>
+                                   <g filter="url(#Filter_1)">
+                                   <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.47762828028215, 138.529172928743)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1089;</tspan></text>
+                                   <text kerning="auto" font-family="Myriad Pro" fill="url(#PSgrad_0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.47762828028215, 138.529172928743)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1089;</tspan></text>
+                                   </g>
+                                   </svg>                            
+                            </div>
+                            <div class="letter-4 uk-align-right" uk-scrollspy="cls: uk-animation-scale-up; repeat: true">
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="167px" height="170px">
+                                   <defs>
+                                   <filter filterUnits="userSpaceOnUse" id="Filter_0" x="6px" y="4px" width="147px" height="143px"  >
+                                       <feOffset in="SourceAlpha" dx="1" dy="1.732" />
+                                       <feGaussianBlur result="blurOut" stdDeviation="3.162" />
+                                       <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+                                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                       <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                       <feMerge>
+                                       <feMergeNode/>
+                                       <feMergeNode in="SourceGraphic"/>
+                                     </feMerge>
+                                   </filter>
+                                   <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+                                     <stop offset="0%" stop-color="rgb(0,0,0)" stop-opacity="0.2" />
+                                     <stop offset="80%" stop-color="rgb(230,230,230)" stop-opacity="0.2" />
+                                   </linearGradient>
+                                   <filter filterUnits="userSpaceOnUse" id="Filter_1" x="0px" y="0px" width="167px" height="170px"  >
+                                       <feOffset in="SourceAlpha" dx="10" dy="17.321" />
+                                       <feGaussianBlur result="blurOut" stdDeviation="4.472" />
+                                       <feFlood flood-color="rgb(28, 29, 29)" result="floodOut" />
+                                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                       <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                       <feMerge>
+                                       <feMergeNode/>
+                                       <feMergeNode in="SourceGraphic"/>
+                                     </feMerge>
+                                   </filter>
+                                   
+                                   </defs>
+                                   <g filter="url(#Filter_0)">
+                                   <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,14.7077646087378, 133.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D75C53">&#1090;</tspan></text>
+                                   </g>
+                                   <g filter="url(#Filter_1)">
+                                   <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.70776460873776, 131.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1090;</tspan></text>
+                                   <text kerning="auto" font-family="Myriad Pro" fill="url(#PSgrad_0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.70776460873776, 131.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1090;</tspan></text>
+                                   </g>
+                                   </svg>                                
+                            </div>
+                            <div class="letter-5 uk-align-left" uk-scrollspy="cls: uk-animation-scale-up; repeat: true">
+                                    <svg 
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    width="167px" height="170px">
+                                   <defs>
+                                   <filter filterUnits="userSpaceOnUse" id="Filter_0" x="6px" y="4px" width="147px" height="143px"  >
+                                       <feOffset in="SourceAlpha" dx="1" dy="1.732" />
+                                       <feGaussianBlur result="blurOut" stdDeviation="3.162" />
+                                       <feFlood flood-color="rgb(0, 0, 0)" result="floodOut" />
+                                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                       <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                       <feMerge>
+                                       <feMergeNode/>
+                                       <feMergeNode in="SourceGraphic"/>
+                                     </feMerge>
+                                   </filter>
+                                   <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+                                     <stop offset="0%" stop-color="rgb(0,0,0)" stop-opacity="0.2" />
+                                     <stop offset="80%" stop-color="rgb(230,230,230)" stop-opacity="0.2" />
+                                   </linearGradient>
+                                   <filter filterUnits="userSpaceOnUse" id="Filter_1" x="0px" y="0px" width="167px" height="170px"  >
+                                       <feOffset in="SourceAlpha" dx="10" dy="17.321" />
+                                       <feGaussianBlur result="blurOut" stdDeviation="4.472" />
+                                       <feFlood flood-color="rgb(28, 29, 29)" result="floodOut" />
+                                       <feComposite operator="atop" in="floodOut" in2="blurOut" />
+                                       <feComponentTransfer><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+                                       <feMerge>
+                                       <feMergeNode/>
+                                       <feMergeNode in="SourceGraphic"/>
+                                     </feMerge>
+                                   </filter>
+                                   
+                                   </defs>
+                                   <g filter="url(#Filter_0)">
+                                   <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,14.4261149685226, 133.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D75C53">&#1080;</tspan></text>
+                                   </g>
+                                   <g filter="url(#Filter_1)">
+                                   <text kerning="auto" font-family="Myriad Pro" fill="rgb(0, 0, 0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.4261149685226, 131.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1080;</tspan></text>
+                                   <text kerning="auto" font-family="Myriad Pro" fill="url(#PSgrad_0)" transform="matrix( 3.58789350592456, 0, 0, 3.58495405159686,9.4261149685226, 131.944218877147)" font-size="66.341px"><tspan font-size="66.341px" font-family="Rubik" font-weight="bold" fill="#D92F19">&#1080;</tspan></text>
+                                   </g>
+                                   </svg>                                
+                            </div>
+                        </div>
+                        <div class="layer bottom">
+                            <div uk-parallax="y: 0,60">
+                                <div class="bubble-1 uk-align-right" uk-scrollspy="cls: uk-animation-scale-up; repeat: true; delay:500""></div>
+                            </div>
+                            <div uk-parallax="y: 0,80">
+                                <div class="bubble-2" uk-scrollspy="cls: uk-animation-scale-up; repeat: true; delay:500"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-3">
+        <div class="uk-container">
+            <div class="text uk-width-1-2 uk-align-right">
+                <div class="big">
+                    <span>
+                        CYTO FORTE -
+                    </span>
+                </div>
+                <div class="small">
+                    <span>
+                        современная альтернатива антибиотикам
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="layer top">
+            <div class="uk-container">
+                <div class="pack"></div>
+            </div>
+        </div>
+        <div class="layer bottom">
+            <div class="uk-container">
+                <div class="daisies"></div>
+            </div>
+        </div>   
+    </section>
+    <section class="section-4" id="2">     
+        <div class="layer z-index-down">
+            <div class="uk-container height-1-0">
+                <div uk-parallax="y: 0,40" class="berries-1 uk-align-left"></div>
+                <div uk-parallax="y: 0,50" class="berries-2 uk-align-right"></div>
+            </div>
+        </div>
+        <div class="uk-container uk-position-relative z-index-down">
+            <div class="inner">
+                <div class="title">
+                    <span>
+                        cyt
+                    </span>
+                    <span class="o-letter">
+                        o
+                    </span>
+                    <span>
+                        &nbsp;forte
+                    </span>
+                </div>
+                <div class="subtitle">
+                    <div class="l1">
+                        Никакой "химии"
+                    </div>
+                    <div class="l2">
+                        Только растительное сырье
+                    </div>
+                </div>
+                <div uk-grid>
+                    <div class="uk-width-1-3 uk-text-center z-index-up">
+                        <div class="ingredient _1 pointer">
+                            <div class="text">
+                                Активный компонент
+                            </div>
+                            <div class="icon arrow-down"></div>
+                        </div>
+                        <div class="ingredient text">
+                                ЭКСТРАКТ КЛЮКВЫ
+                        
+                        </div>
+                        <ul class="ingredient list check-list-white">
+                            <li>
+                                органические кислоты – уничтожают бактерии в кишечнике, почках, мочевом пузыре и мочевыводящих протоках;
+                            </li>
+                            <li>
+                                тритерпеноиды – снимают воспаление;
+                            </li>
+                            <li>
+                                флавоноиды – снижают проницаемость сосудов;
+                            </li>
+                            <li>
+                                пектины – помогают очищению организма.
+                            </li>
+                            <li>
+                                бензойная кислота - обладает противовоспалительным и антибактериальным действием.
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="uk-width-expand uk-position-relative z-index-up">
+                            <div class="ingredient pointer _2 uk-align-right">
+                                <div class="text">
+                                    Вспомогательные компоненты
+                                </div>
+                                <div class="icon arrow-down"></div>
+                            </div>                    
+                            <div class="layer">
+                                <div uk-parallax="y: 0,110" class="daisies"></div>
+                            </div>
+                            <div class="layer top">
+                                <div uk-parallax="y: 0,130" id="pack" class="pack"></div>
+                            </div>
+                            <div class="layer top">
+                                <div uk-parallax="y: 0,50" class="berries_hamomile"></div>
+                                <div uk-toggle="target: #form-modal"  class="button red uk-align-right"> <span>Заказать</span><i class="icon plus"></i></div>
+
+                            </div>
+                            <div uk-parallax="target: #pack; y: 0,130" class="layer top up">
+                                    <div class="uk-container">
+                                        <div class="tooltip-count _1">
+                                            <i class="tooltip icon green plus " ></i>
+                                            <div  class="tooltip-item uk-position-relative z-index-up" uk-dropdown="pos:bottom-center;mode: click; animation: uk-animation-slide-bottom-medium; duration: 250">
+                                                <p>
+                                                        Витамин B6 - существенная роль в активности нервной системы. При  дефиците витамина B6 затруднено продуцирование антител и выработка организмом  сопротивляемости к патогенным микроорганизмам
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tooltip-count _2">
+                                            <i href="#toggle-animation" class="tooltip icon green plus "></i>
+                                            <div id="tooltip-item-2" class="tooltip-item" uk-dropdown="pos:bottom-center;mode: click; animation: uk-animation-slide-bottom-medium; duration: 250">
+                                                <p>
+                                                        Витамин С - улучшает работу иммунной системы
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tooltip-count _3 ">
+                                            <i href="#toggle-animation" class="tooltip icon green plus"></i>
+                                            <div id="tooltip-item-3" class="tooltip-item" uk-dropdown="pos:bottom-center;mode: click; animation: uk-animation-slide-bottom-medium; duration: 250">
+                                                <p>
+                                                    Витамин В2 - восстанавливает слизистую мочеполовой системы. Участвует в  синтезе гемоглобина
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tooltip-count _4">
+                                            <i href="#toggle-animation" class="tooltip icon green plus "></i>
+                                            <div id="tooltip-item-4" class="tooltip-item" uk-dropdown="pos:bottom-center;mode: click; animation: uk-animation-slide-bottom-medium; duration: 250">
+                                                <p>
+                                                    Витамин E - предотвращает воспаления. Подавляет лейкотриенов и простагландинов арахидоновой кислоты, мощный антиоксидант. Восстанавливает работу мочеполовой системы, ускоряет заживление слизистой
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="tooltip-count _5">
+                                            <i href="#toggle-animation" class="tooltip icon green plus " ></i>
+                                            <div id="tooltip-item-5" class="tooltip-item" uk-dropdown="pos:bottom-center;mode: click; animation: uk-animation-slide-bottom-medium; duration: 250">
+                                                <p>
+                                                    Экстракт ромашки - снимает болевые ощущения и воспалительные процессы
+                                                </p>
+                                            </div>
+                                        </div> 
+                                        <div class="tooltip-count _6">
+                                                <i href="#toggle-animation" class="tooltip icon green plus " ></i>
+                                                <div id="tooltip-item-5" class="tooltip-item" uk-dropdown="pos:bottom-center;mode: click; animation: uk-animation-slide-bottom-medium; duration: 250">
+                                                    <p>
+                                                        Цинк - усиливает регенерацию поврежденных тканей
+                                                    </p>
+                                                </div>
+                                            </div>                                         
+                                        <div class="tooltip-count _7">
+                                                <i href="#toggle-animation" class="tooltip icon green plus " ></i>
+                                                <div id="tooltip-item-5" class="tooltip-item" uk-dropdown="pos:bottom-center;mode: click; animation: uk-animation-slide-bottom-medium; duration: 250">
+                                                    <p>
+                                                        Витамин B1 - необходим для переработки жиров, белков и углеводов. Насыщает организм полезной энергией. Помогает справиться с застойными явлениями
+                                                    </p>
+                                                </div>
+                                            </div>                                                                                                                                                     
+                                    </div>
+                                </div>
+                    </div>
+                </div>   
+            </div>
+            </div>
+        <div class="layer top z-index-down">
+                <div class="uk-container">
+                    <div uk-parallax="y: 0,80" class="leaf-1 uk-align-right"></div>
+                </div>
+            </div>
+            <div class="layer bottom">
+                    <div class="uk-container">
+                        <div uk-parallax="y: 0,50" class="leaf-2 uk-align-left"></div>
+                    </div>
+            </div> 
+    </section>
+    <section class="section-5">
+        <div class="layer bottom leaf">
+            <div class="uk-container">
+                <div uk-parallax="y: 0,50" class="leaf uk-align-right"></div>
+            </div>
+        </div>
+        <div class="layer">
+            <div class="uk-container">
+                <div uk-parallax="bgy: -100" class="berries uk-align-right"></div>
+            </div>
+        </div>
+        <div class="uk-container uk-position-relative">
+            <div uk-grid>
+                <div class="uk-width-3-5">
+                    <div class="title">
+                        CYTO FORTE
+                    </div>
+                    <div class="text">
+                        <p>
+                            Формула изобретена и запатентована командой лучших фармацевтов Европы и США, которые специализируются на урологии, фитотерапии и создании альтернативных антибиотикам средств.           
+                        </p>
+                        <div class="blockqute">
+                            <p>
+                                Разработано для женщин 18-50 лет, с учетом анатомических и физиологических особенностей.
+                            </p>
+                        </div>
+                        <p>
+                            Дозировка компонентов соответствует стандарту <b>GMP3</b>. Это международный нормативный документ, фиксирующий правила производства и контроля качества лекарственных средств. <b>Сырье для производства Cyto forte проходит двойной контроль качества на заводах Польши, Болгарии и Испании.</b>
+                        </p>
+                    </div>
+                </div>
+                <div class="uk-width-expand"> 
+                    <div class="image">
+                        <img src="img/docs-photo.jpg" uk-parallax="x: -40,40" style="margin-left:-131px;" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="layer bottom">
+                <!-- <div uk-scrollspy="cls:uk-animation-scale-down; repeat: true; delay:200" > -->
+                <div class="stamp-text">
+                    Разработано <br>
+                    лучшими учеными <br>
+                    мира <br>
+                </div>
+            <!-- </div> -->
+            </div>
+            <div class="layer">
+                <!-- <div uk-scrollspy="cls:uk-animation-scale-down; repeat: true; delay:600; offset-top: -300;" > -->
+                    <div class="stamp"></div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="section-6">
+        <div class="uk-container">
+            <div class="title uk-text-center">
+                CYT
+                <div class="leaf">
+                    <span>O</span>&nbsp;<span>F</span>
+                </div>
+                ORTE  
+            </div>
+            <div class="subtitle uk-text-center">
+                лечит, а не обезболивает
+            </div>
+        </div>
+        <div class="main-content" >
+            <div class="uk-container">
+                <div class="layer">
+                    <div class="berries-s6 uk-width-1-3"></div>
+                </div>
+                <div class="uk-child-width-1-2 uk-position-relative uk-position-z-index" uk-grid>
+                    <div class="uk-position-z-index">
+                        <div class="list-left">
+                                <div class="berries-2" ></div>
+                                <div class="pack" uk-parallax="y: 15,-15"></div>
+                            <div class="list-title uk-text-center">
+                                    Каждая таблетка Cyto forte:
+                            </div>
+                            <ul class="list check-list-green">
+                                <li>
+                                        <p>препятствует прикреплению бактерий к клеткам уротелия;</p>
+                                </li>
+                                <li>
+                                        <p>деформирует клетки болезнетворных микроорганизмов;</p>
+                                </li>
+                                <li>
+                                        <p>повреждает клеточные мембраны бактерий и блокирует их синтез;</p>
+                                </li>
+                                <li>
+                                        <p>предотвращает образование бактериальных биопленок;</p>
+                                </li>
+                                <li>
+                                        <p>способствует естественному выведению вредных бактерий вместе с мочой.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="list-right">
+                            <div class="background"></div>
+                                <div class="slide-bottom capsule-anim uk-position-relative">
+                                        <div uk-parallax="y: 0,80" class="capsule"></div>
+                                    </div>
+                                <div class="list-title uk-text-center">
+                                    При продолжительном применении <span>(более 2-3 недель):</span>
+                                </div>
+                                <ul class="list check-list-white">
+                                    <li>
+                                        <p>влияет на кислотность мочи; норма - кислая среда (рН = 7);</p>    
+                                    </li>
+                                    <li>
+                                        <p>препятствует повторному инфицированию мочевыводящих путей; </p>    
+                                    </li>
+                                    <li>
+                                        <p>повышает устойчивость организма к мочеполовым инфекциям.</p>    
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-7">
+        <div class="layer top">
+            <div class="uk-container">
+                    <div uk-parallax="y: 0,70" class="bubble-1 uk-align-right"></div>
+            </div>
+        </div>
+        <div class="layer bottom">
+            <div class="uk-container">
+                <div uk-parallax="y: 0,50" class="bubble-2 uk-align-left"></div>
+            </div>
+        </div>                
+        <div class="layer top">
+            <div class="uk-container">
+                <div class="main-title">
+                    Как принимать таблетки 
+                </div>
+                <div class="subtitle">
+                    cyto <span class="leaf"></span> forte
+                </div>
+            </div>
+        </div>
+        <div class="layer top">
+            <div class="uk-container">
+                <div uk-parallax="y: 0,100" class="girl_pills uk-align-right uk-position-z-index"></div>
+            </div>
+        </div>
+        <div class="layer top">
+                <div class="uk-container">
+                    <div uk-parallax="y: 0,60" class="berries-1 uk-align-left"></div>
+                </div>
+        </div> 
+        <div class="layer bottom">
+            <div class="uk-container">
+                <div uk-parallax="y: 0,110" class="leaf-2 uk-align-right"></div>
+            </div>
+        </div> 
+        <div class="layer bottom">
+            <div class="uk-container">
+                <div uk-parallax="y: -30,50" class="berries-2 uk-align-right"></div>
+            </div>
+        </div>        
+        <div class="layer top">
+                <div class="uk-container">
+                    <div uk-parallax="y: 0,60" class="pack uk-align-right uk-position-z-index">
+                    </div>
+                    <div uk-toggle="target: #form-modal"  class="button red uk-align-right"> <span>Заказать</span><i class="icon plus"></i></div>
+                </div>
+            </div>   
+        <div class="uk-container">
+            <div class="uk-width-3-5 uk-align-left">
+                <div class="how_to uk-child-width-1-2" uk-grid>
+                    <div>
+                        <div class="item">
+                            <div class="icon steth icon-1 uk-align-left"></div>
+                            <div class="text">
+                                <div class="title">
+                                Лечебный курс:
+                                </div>
+                                <p>
+                                по 1 таблетке 2 раза в день
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon pills icon-1 uk-align-left"></div>
+                            <div class="text">
+                                <div class="title">
+                                        Совместно с антибиотиками:                        
+                                </div>
+                                <p>
+                                        по 1,5 таблетки 2 раза в день
+                                </p>
+                            </div>
+                        </div>   
+                    </div>                     
+
+                    <div>
+                        <div class="item">
+                            <div class="icon two_pills uk-align-left"></div>
+                            <div class="text">
+                                <div class="title">
+                                    В период обострений:                                         
+                                </div>
+                                <p>
+                                    по 2 таблетки 2 раза в день
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="icon organs icon-1 uk-align-left"></div>
+                            <div class="text">
+                                <div class="title">
+                                    В целях профилактики:                                        
+                                </div>
+                                <p>
+                                    по 1 таблетке 2 раза в день
+                                </p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+                <div>
+                    <div class="stamp">
+                        <p>
+                                Принимать строго после еды. Рекомендуемый курс лечения: от 14 дней до 2 месяцев
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section uk-parallax="bgx: 0,50" class="section-8" id="section-8">
+        <div class="layer">
+            <div uk-parallax="y: -100,200" class="berries uk-align-left"></div>
+        </div>
+        <div class="layer bottom ">
+            <div class="uk-container">
+                <div class="pack"></div>
+            </div>
+        </div>
+        <div class="uk-container z-index-up uk-position-relative">
+            <div uk-grid>
+                
+                <div class="uk-width-expand">
+                    <div class="title">
+                            Рекомендуют <br> лучшие <br> врачи&nbsp;-<br>урологи
+                    </div>
+                </div>
+                <div class="uk-width-2-3">
+                    <div class="docs uk-child-width-1-2" uk-grid>
+                        <div>
+                            <div class="photo">
+                                <img class="_1" src="img/doc-photo-1.jpg" alt="">
+                            </div>
+                            <div class="doc_title">
+                                Хорева Светлана Юрьевна, <br> уролог, к.м.н., стаж <br> работы - 18 лет:
+                            </div>
+                            <div class="text">
+                                <p>
+                                    Я раньше с настороженностью относилась к новым препаратам на фармацевтическом рынке. Но европейская статистика выздоровлений на фоне приема Cyto forte приятно удивила меня. Наконец-то у нас появился такой препарат, который не просто купирует обострения цистита, а полностью излечивает болезнь, которая ранее считалась хронической.
+                                </p>
+                            </div>
+
+                        </div>
+                        <div>
+                                <div class="photo">
+                                    <img class="_2" src="img/doc-photo-2.jpg" alt="">
+                                </div>
+                                <div class="doc_title">
+                                        Ковалева Елена Константиновна, урогинеколог, врач высшей категории, стаж работы 12 лет:
+                                </div>
+                                <div class="text">
+                                    <p>
+                                            При интерстициальном и лучевом цистите Cyto forte снижает болевой синдром и сокращает частоту мочеиспусканий. Если говорить об эффекте при хроническом бактериальном рецидивирующем цистите – здесь можно ожидать уменьшения частоты рецидивов или  их исчезновения. Преимуществом перед традиционными схемами лечения цистита является возможность профилактического приема. После 1-2 профилактических курсов риск первично или повторно заболеть циститом составляет 78%. 
+                                    </p>
+                                </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+    <section class="section-9" id="3">
+        <div class="layer">
+            <div class="uk-container">
+                <div uk-parallax="y: 0,100" class="leaf"></div>
+            </div>
+
+        </div>
+        <div class="layer bottom">
+            <div class="uk-container">
+                <div uk-parallax="y: 0,50" class="leaf-2"></div>
+            </div>
+        </div>
+        <div class="layer bottom">
+                <div class="uk-container">
+                    <div uk-parallax="y: 0,-50" class="berries"></div>
+                </div>
+            </div>
+            <div class="layer">
+                    <div class="uk-container">
+                        <div  uk-parallax="bgy: 0,-50" class="berries-2 uk-align-right"></div>
+                    </div>
+                </div>                    
+        <div class="uk-container">
+
+            <div class="review ">
+                <div class="main-title uk-text-center">
+                    отзывы пациентов
+                </div>
+                <div class="uk-child-width-1-3" uk-grid>
+                    <div>
+                        <div class="item">
+                            <div class="title uk-text-center">
+                                    Мария Милославцева, 44 года:
+                            </div>
+                            <div class="stars">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="image">
+                                <img src="img/review-photo-1.jpg" alt="">
+                            </div>
+                            <div class="text uk-text-center">
+                                <p>
+                                        Год назад искупалась в холодной речке и подхватила цистит. Боли сильнейшие, в туалет сходить было невозможно, перерывы между обострениями - 2-3 недели. Антибиотики мне нельзя, есть небольшие проблемы с печенью. Поэтому врач раз за разом прописывал мне анальгетики, которые хоть и снимали боль, но болезнь не лечили. Заказала в интернете Cyto Forte, пропила курс, и от цистита не осталось ни следа. Врач так и написал в карточке: “здорова”.
+                                </p>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div>
+                        <div class="item">
+                            <div class="title uk-text-center">
+                                    Екатерина Водяных, 19 лет:
+                            </div>
+                            <div class="stars">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="image">
+                                <img src="img/review-photo-2.jpg" alt="">
+                            </div>
+                            <div class="text uk-text-center">
+                                <p>
+                                        Цистит у меня был с подросткового возраста. Стоило полежать в ванной дольше обычного или выйти в легкой одежде на холод, в тот же вечер - боли, спазмы и прочие “радости”. Мама со мной намучалась! Врачи, если честно, тоже. Хорошо хоть новый врач продвинутый попался. Сказал, что эту болезнь до сих пор лечат старыми методами, и хорошо, что у меня до осложнений не дошло. Он выписал мне таблетки Cyto forte - растительные, с экстрактом клюквы. Обострений нет уже 4 месяца!  
+                                </p>
+                            </div>
+                        </div>                       
+                    </div>
+                    <div>
+                        <div class="item">
+                            <div class="title uk-text-center">
+                                    Яна Земскова, 36 лет:
+                            </div>
+                            <div class="stars">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <div class="image">
+                                <img src="img/review-photo-3.jpg" alt="">
+                            </div>
+                            <div class="text uk-text-center">
+                                <p>
+                                        До Cyto forte я пыталась вылечить цистит народными средствами: лавровым листом, спринцеванием    и т.д. С каждым обострением становилось все хуже и хуже. Пошла к врачу, он антибиотики назначил.    В итоге, желудок себе испортила. Знакомая с аналогичной проблемой рассказала мне о Cyto forte. Мол, никакой химии, а вместе с болью уходит и болезнь. Я впечатлилась и заказала в интернете это средство.  И через 2 месяца я забыла, что у меня когда-то был цистит. И больше не вспоминаю о нем уже год!
+                                </p>
+                            </div>
+                        </div>                       
+                    </div>                                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-10">
+            <div class="layer bottom">
+                    <div class="uk-container">
+                        <div uk-parallax="y: 0,50" class="leaf"></div>
+                    </div>
+        
+                </div>
+                <div class="layer top">
+                    <div class="uk-container">
+                        <div uk-parallax="y: 0,-100" class="leaf-2"></div>
+                    </div>
+                </div>
+                <div class="layer bottom">
+                    <div class="uk-container">
+                        <div uk-parallax="y: 0,50" class="berries-2 uk-align-right"></div>
+                    </div>
+                </div>
+        <div class="uk-container">
+            <div class="layer">
+                <div class="uk-text-center">
+                        <div class="main-title ">
+                            Как заказать
+                        </div>
+                    </div>
+            </div>
+            <div class="how_to_order">
+                <div class="inner">
+                        <div class="layer">
+                                <div class="uk-container">
+                                    <div uk-parallax="y: 0,50" class="berries"></div>
+                                </div>
+                            </div>
+                    <div class="subtitle uk-text-center">
+                        cyto forte
+                    </div>
+                    <div uk-grid class="uk-child-width-1-3">
+                        <div class=" item uk-text-center">
+                            <div class="image uk-text-center">
+                                <img src="img/how-order-photo-1.jpg" alt="">
+                            </div>
+                            <div class="text uk-text-center">
+                                <b>Заполните форму заказа</b>. Ваши персональные данные будут надежно защищены
+                            </div>
+                        </div>
+                        <div class="item uk-text-center">
+                                <div class="image uk-text-center">
+                                    <img src="img/how-order-photo-2.jpg" alt="">
+                                </div>
+                                <div class="text uk-text-center">
+                                    Ответьте на наш звонок и <b>подтвердите заказ</b>
+                                </div>
+                            </div>
+                            <div class="item uk-text-center">
+                                    <div class="image uk-text-center">
+                                        <img src="img/how-order-photo-3.jpg" alt="">
+                                    </div>
+                                    <div class="text uk-text-center">
+                                        <b>Получите посылку</b> в кратчайшие сроки
+                                    </div>
+                                </div>                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section class="section-11">
+    <div class="layout">
+        <div class="uk-container">
+            <div class="uk-width-2-3">
+                <div class="item uk-position-relative">
+                    <div class="layer">
+                        <div class="title">
+                                CYTO&nbsp;<span>FORTE</span>
+                        </div>
+                    </div>
+                    <div class="subtitle">
+                            Хочешь <br>
+                            попрощаться <br>
+                            с циститом <br> 
+                            прямо сейчас?
+                    </div>
+                    <div class="text">
+                            Оставь боль и неудобства <br> 
+                            в прошлом!
+                    </div>
+                    <div uk-toggle="target: #form-modal"  class="button red"> <span>Заказать</span><i class="icon plus"></i></div>
+                    
+                    <div class="layer">
+                        <div class="pack">
+                            <div class="price uk-text-center">
+                                <span>
+                                    2&nbsp;953
+                                </span>Руб<br>
+                                цена
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<!-- This is the modal -->
+<div id="form-modal" class="modal-form uk-text-center" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <div class="layer">
+                    <div class="leaf uk-animation-scale-down uk-align-left"></div>
+            </div>
+            <div class="layer buttom">
+                    <div class="berries uk-animation-scale-down uk-align-left"></div>
+            </div> 
+            <div class="layer buttom">
+                    <div class="leaf-2 uk-animation-scale-down uk-align-left"></div>
+            </div>
+            <h2 class="title uk-text-center">
+                оформление заказа
+            </h2>
+            <select name="country" id="" class="uk-select uk-margin-small country_code_selector" value="Россия">
+                    <option value="RU">Россия</option>
+            </select>
+            <input type="text" class="uk-input uk-margin-small" placeholder="Ваше имя">
+            <input type="text" placeholder="Номер телефона" class="uk-input uk-margin-small">
+            <div class="button red js_submit uk-text-center">Заказать сейчас</div>
+            <div class="uk-modal-close" ><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 44 44">
+                <path d="m22,0c-12.2,0-22,9.8-22,22s9.8,22 22,22 22-9.8 22-22-9.8-22-22-22zm3.2,22.4l7.5,7.5c0.2,0.2 0.3,0.5 0.3,0.7s-0.1,0.5-0.3,0.7l-1.4,1.4c-0.2,0.2-0.5,0.3-0.7,0.3-0.3,0-0.5-0.1-0.7-0.3l-7.5-7.5c-0.2-0.2-0.5-0.2-0.7,0l-7.5,7.5c-0.2,0.2-0.5,0.3-0.7,0.3-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5 0.3-0.7l7.5-7.5c0.2-0.2 0.2-0.5 0-0.7l-7.5-7.5c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5 0.3-0.7l1.4-1.4c0.2-0.2 0.5-0.3 0.7-0.3s0.5,0.1 0.7,0.3l7.5,7.5c0.2,0.2 0.5,0.2 0.7,0l7.5-7.5c0.2-0.2 0.5-0.3 0.7-0.3 0.3,0 0.5,0.1 0.7,0.3l1.4,1.4c0.2,0.2 0.3,0.5 0.3,0.7s-0.1,0.5-0.3,0.7l-7.5,7.5c-0.2,0.1-0.2,0.5 3.55271e-15,0.7z"/>
+              </svg>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

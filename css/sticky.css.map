@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/theme/sticky.scss"
+    ],
+    "names": [],
+    "file": "sticky.css"
+}

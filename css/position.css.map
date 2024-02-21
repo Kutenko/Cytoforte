@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/theme/position.scss"
+    ],
+    "names": [],
+    "file": "position.css"
+}

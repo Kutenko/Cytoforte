@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/theme/divider.scss"
+    ],
+    "names": [],
+    "file": "divider.css"
+}
